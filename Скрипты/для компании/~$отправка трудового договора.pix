@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <CompilationType>CSharp</CompilationType>
+  <Description>Новый скрипт без наполнения.</Description>
+  <Id>4430f6f7-ffa4-4486-aefb-dd715fe4f621</Id>
+  <Logic z:Id="i2" i:type="ExecutedStep">
+    <Childs>
+      <AbstractStep z:Id="i3" i:type="ExecutedStep">
+        <Childs />
+        <Id>b830189f-2d49-405a-9975-8df63bd9f76b</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i4">
+            <PropertyName>List</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>directories</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.BaseCollections.List.CreateList</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i5" i:type="ExecutedStep">
+        <Childs />
+        <Id>5593f88e-51df-4624-a264-0c0e76356bf3</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i6">
+            <PropertyName>DirPath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"Директория из прошлого скрипта"
+Пример: @"C:\Users\Danil\Desktop\итог"</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i7">
+            <PropertyName>ListFilesOrCatalogs</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>directories</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId>1</SelectedOptionId>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>Activities.Files.GetListFilesOrCatalogs</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i8" i:type="ExecutedStep">
+        <Childs>
+          <AbstractStep z:Id="i9" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i10" i:type="ExecutedStep">
+                <Childs />
+                <Id>4a20cc46-46b6-4935-a2bc-5d18c895f1eb</Id>
+                <Parent z:Ref="i9" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i11">
+                    <PropertyName>Value</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>item.Substring(item.LastIndexOf('\\') +1)</_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i12">
+                    <PropertyName>To</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>item</_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i13" i:type="ExecutedStep">
+                <Childs />
+                <Id>73f05fde-1713-455a-89ff-3c9f1c788b2f</Id>
+                <Parent z:Ref="i9" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i14">
+                    <PropertyName>Account</PropertyName>
+                    <_dataType>Value</_dataType>
+                    <_expression></_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i15">
+                    <PropertyName>Subject</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>"договор"</_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i16">
+                    <PropertyName>Body</PropertyName>
+                    <_dataType>Value</_dataType>
+                    <_expression></_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i17">
+                    <PropertyName>To</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>item</_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i18">
+                    <PropertyName>CopyTo</PropertyName>
+                    <_dataType>Value</_dataType>
+                    <_expression></_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i19">
+                    <PropertyName>HiddenCopyTo</PropertyName>
+                    <_dataType>Value</_dataType>
+                    <_expression></_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i20">
+                    <PropertyName>BodyIsHTML</PropertyName>
+                    <_dataType>Value</_dataType>
+                    <_expression i:nil="true" />
+                    <_value xmlns:d11p1="http://www.w3.org/2001/XMLSchema" i:type="d11p1:boolean">false</_value>
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i21">
+                    <PropertyName>Attachment</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>"Расположение трудового договора"
+Пример:@"C:\Users\Danil\Desktop\Trudovoj-dogovor-Blank.doc"</_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i22">
+                    <PropertyName>ForwardMessage</PropertyName>
+                    <_dataType>Value</_dataType>
+                    <_expression></_expression>
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i23">
+                    <PropertyName>DeliveryReportRequested</PropertyName>
+                    <_dataType>Value</_dataType>
+                    <_expression i:nil="true" />
+                    <_value xmlns:d11p1="http://www.w3.org/2001/XMLSchema" i:type="d11p1:boolean">false</_value>
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>Activities.Office.Outlook.SendMailMessage</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>ded90744-1060-4458-992d-cfd7898297d9</Id>
+            <Parent z:Ref="i8" />
+            <PropertyValues>
+              <PropertyValue z:Id="i24">
+                <PropertyName>Condition</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>item.Contains("итог");</_expression>
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+              <PropertyValue z:Id="i25">
+                <PropertyName>Counter</PropertyName>
+                <_dataType>Value</_dataType>
+                <_expression></_expression>
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.LoopWhile</_activityFullName>
+          </AbstractStep>
+        </Childs>
+        <Id>57780de8-bfbb-4a61-a391-df89fb3f1cdb</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i26">
+            <PropertyName>Collection</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>directories</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i27">
+            <PropertyName>Iterator</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>item</_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i28">
+            <PropertyName>Counter</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression></_expression>
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
+      </AbstractStep>
+    </Childs>
+    <Id>6bfff6fe-494f-44f0-a22e-265a0a3398f5</Id>
+    <Parent i:nil="true" />
+    <PropertyValues />
+    <SelectedOptionId i:nil="true" />
+    <EnableStatus>true</EnableStatus>
+    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+    <RetryCount>-1</RetryCount>
+    <Text></Text>
+    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+  </Logic>
+  <Name>отправка трудового договора.pix*</Name>
+  <Params />
+  <Version i:nil="true" />
+</Script>
